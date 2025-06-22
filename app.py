@@ -5,7 +5,7 @@ import re
 app = Flask(__name__)
 
 model = joblib.load("Fake news/model/model.pkl")
-vectorizer = joblib.load("model/vectorizer.pkl")
+vectorizer = joblib.load("Fake news/model/vectorizer.pkl")
 
 def clean(text):
     text = re.sub(r'http\S+', '', text)
