@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 import joblib
 import re
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="Fake news/templates")
 
 model = joblib.load("Fake news/model/model.pkl")
 vectorizer = joblib.load("Fake news/model/vectorizer.pkl")
