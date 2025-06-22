@@ -4,7 +4,7 @@ import re
 
 app = Flask(__name__)
 
-model = joblib.load("model/model.pkl")
+model = joblib.load("Fake news/model/model.pkl")
 vectorizer = joblib.load("model/vectorizer.pkl")
 
 def clean(text):
